@@ -1,0 +1,565 @@
+		*{
+			margin: 0;
+			padding: 0;
+		}
+			
+
+		body{					
+			margin-top: 4%;
+
+		}
+
+		a{
+			text-decoration: none;
+			color: #000;
+		}
+		
+		label{
+			display: inline-block;
+			min-width: 100px;
+		}
+
+		
+		@font-face{
+			font-family: dragon;
+			src: url('../fonts/Saiyan-Sans.ttf');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+	
+		body{
+		background-color: #e9e7e7;
+	}
+		
+	.poppins-thin {
+		font-family: "Poppins", sans-serif;
+		font-weight: 100;
+		font-style: normal;
+	  }
+	  
+	  .poppins-extralight {
+		font-family: "Poppins", sans-serif;
+		font-weight: 200;
+		font-style: normal;
+	  }
+	  
+	  .poppins-light {
+		font-family: "Poppins", sans-serif;
+		font-weight: 300;
+		font-style: normal;
+	  }
+	  
+	  .poppins-regular {
+		font-family: "Poppins", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+	  }
+	  
+	  .poppins-medium {
+		font-family: "Poppins", sans-serif;
+		font-weight: 500;
+		font-style: normal;
+	  }
+	  
+	  .poppins-semibold {
+		font-family: "Poppins", sans-serif;
+		font-weight: 600;
+		font-style: normal;
+	  }
+	  
+	  .poppins-bold {
+		font-family: "Poppins", sans-serif;
+		font-weight: 700;
+		font-style: normal;
+	  }
+	  
+	  .poppins-extrabold {
+		font-family: "Poppins", sans-serif;
+		font-weight: 800;
+		font-style: normal;
+	  }
+	  
+	  .poppins-black {
+		font-family: "Poppins", sans-serif;
+		font-weight: 900;
+		font-style: normal;
+	  }
+	  
+	  .poppins-thin-italic {
+		font-family: "Poppins", sans-serif;
+		font-weight: 100;
+		font-style: italic;
+	  }
+	  
+	  .poppins-extralight-italic {
+		font-family: "Poppins", sans-serif;
+		font-weight: 200;
+		font-style: italic;
+	  }
+	  
+	  .poppins-light-italic {
+		font-family: "Poppins", sans-serif;
+		font-weight: 300;
+		font-style: italic;
+	  }
+	  
+	  .poppins-regular-italic {
+		font-family: "Poppins", sans-serif;
+		font-weight: 400;
+		font-style: italic;
+	  }
+	  
+	  .poppins-medium-italic {
+		font-family: "Poppins", sans-serif;
+		font-weight: 500;
+		font-style: italic;
+	  }
+	  
+	  .poppins-semibold-italic {
+		font-family: "Poppins", sans-serif;
+		font-weight: 600;
+		font-style: italic;
+	  }
+	  
+	  .poppins-bold-italic {
+		font-family: "Poppins", sans-serif;
+		font-weight: 700;
+		font-style: italic;
+	  }
+	  
+	  .poppins-extrabold-italic {
+		font-family: "Poppins", sans-serif;
+		font-weight: 800;
+		font-style: italic;
+	  }
+	  
+	  .poppins-black-italic {
+		font-family: "Poppins", sans-serif;
+		font-weight: 900;
+		font-style: italic;
+	  }
+	  
+	/*--------------------Header de la Web--------------------*/
+
+	header{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		background-image: url(../img/fondopagina.webp);
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 2% 0;
+	}
+	header>figure{
+		flex: 2;
+		min-width: 100px;
+	}
+	header>h1{
+		flex: 8;
+		text-align: center;
+		font-size: 8.5vw;
+		font-family: dragon, sans-serif;
+		text-shadow: 1px 1px 6px #000;
+	}
+
+	header>h1>span:first-of-type{
+		color: #EEBD0A;
+	}
+
+	header>h1>span:nth-of-type(2){
+		color: #D7000D;
+	}
+
+	header>h1>span:last-of-type{
+		color: #FDD07B;
+		
+	}
+	/*--------------------Navegación de la Web--------------------*/
+
+	nav{
+		display: flex;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		background-color: #c4c9d4;
+		border-bottom: 1px solid #000000;
+		
+	}
+	nav>ul{
+		list-style: none;
+		padding: 1%;
+		background-color: #c4c9d4;
+		width: 50%;
+		display: flex;
+		justify-content: flex-end;
+	}
+	nav>ul>li{
+		display: inline-block;
+		font-variant: small-caps;
+		margin: 0 2%;
+		padding: 1% 1%;
+		font-family: "Poppins", sans-serif;
+		font-weight: 600;
+		border-bottom: 2px solid #ffffff00;
+	}
+
+	nav>ul>li:first-of-type{
+		margin-left: 2%;
+	}
+
+	nav>ul>li>a{
+		color: #504e4e;
+		transition: 0.5s;
+	}
+
+	nav>ul>li:hover a{
+		color: #ac4249;
+		cursor: pointer;
+		border-bottom: 2px solid #fff;
+	}
+
+	nav>form{
+		display: flex;
+		width: 50%;
+		justify-content: flex-start;
+		align-items: center;
+		
+	}
+	nav>form>span{
+		display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 26%;
+	}
+	nav>form>span>input{
+		margin: 1%;
+		width: 80%;
+		padding: 1%;
+		font-family: "Poppins", sans-serif;
+		font-weight: 500;
+	}
+	nav>form>button{
+		margin-right: 4%;
+		border: 0.11rem solid #000;
+		font-variant: small-caps;
+		background-color: #f0eeee;
+		color: #504e4e;
+		cursor: pointer;
+		transition: 0.5s;
+		font-family: "Poppins", sans-serif;
+		font-weight: 600;
+		width: 70px;
+		height: 30px;
+	}
+
+	nav>form>button:hover{
+		background-color: #FDD07B;
+		border: 0.11rem solid #ffffff;
+		color: #ac4249;
+	}
+
+	@media screen and (max-width: 1054px){
+		nav>ul{
+			margin-right: 0%;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			
+		}
+
+		nav>form{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		nav>ul>li{
+			margin-right: 2%;
+		}
+		nav>ul>li:first-of-type{
+			margin-left: 0;
+		}
+	}
+
+	@media screen and (max-width: 1054px ){
+		nav>ul{
+			margin-right: 0%;
+		}
+		nav>form {
+			justify-content: flex-start;
+		}
+		nav>form>span{
+			width: 60%;
+		}
+	}
+
+	@media screen and (max-width: 745px){
+		form button{
+			font-size: .6rem;
+		}
+	}
+	@media screen and (max-width: 658px){
+		nav>ul{
+			min-width: 400px;
+		}
+	}
+	@media screen and (max-width: 582px){
+		form button{
+			font-size: .5rem;
+		}
+	}
+
+	figure>img{
+		width: 100%;
+	}
+
+	nav i#menu-icon{
+		font-size: 36px;
+		color: #000;
+		display: none;
+	}
+
+	@media (max-width: 1054px){
+		nav{
+			padding: 1.25rem 0;
+			justify-content: space-around;
+			align-items: center;
+		}
+		nav i#menu-icon{
+			display: block;
+			color: #000;
+			font-size: 0.8rem;
+	}
+		.navlist{
+			position: fixed;
+			top: 80px;
+			left: 0;
+			width: 100%;
+			padding: 0.5rem 4%;
+			background-color: #c4c9d4;
+			border-bottom: 1px solid #000000;
+			display: none;
+		}
+		.navlist.active{
+			display: block;
+		}
+		.navlist li{
+			display: block;
+			margin: 1.5rem 0;
+			width: 60%;
+		}
+
+		.navlist li:hover a{
+			color: #ac4249;
+			cursor: pointer;
+			border-bottom: 2px solid #fff;
+		}		
+	}				
+
+	
+
+	/*--------------------Cuerpo de la Web--------------------*/
+
+		main{
+			border-bottom: 1px solid #000;
+			background-color: #ffffff;				
+		}
+
+		main>span{
+			display: flex;
+			width: 100%;
+			justify-content: center;
+			align-items: center;
+			background-color: #c4c9d4;
+			border-top: 1px solid #000;
+			border-bottom: 1px solid #000;
+		
+		}
+
+		main h2, main h3{
+			margin-top: 1%;
+			margin-bottom: 1%;
+			font-family: "Poppins", sans-serif;
+			font-size: 1.4em;
+			color: #665352;
+			font-style: italic;
+		}
+
+		main p{
+			margin-top: 1.4%;
+			text-align: justify;
+			font-size: 1em;
+			font-family: "Poppins", sans-serif;
+			font-style: italic;
+		}
+
+		main>section:first-of-type, main>section:last-of-type{
+			padding: 3% 2%;
+		}
+
+		
+		main>section:nth-of-type(2){
+			justify-content: center;
+			display: flex;
+			overflow: hidden;
+		}
+
+		main>section:nth-of-type(2)>article{
+			width: 50%;
+		}
+		main>section:nth-of-type(3)>article{
+			width: 50%;
+		}
+
+		main>section:nth-of-type(2)>article:first-of-type{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/vegeta1.webp);
+    background-repeat: no-repeat;
+    background-size: cover; /* La imagen se ajusta para cubrir completamente el contenedor */
+    background-position: center; /* La imagen se posiciona en el centro del contenedor */
+    padding: 10% 0;
+
+		}
+
+		main>section:nth-of-type(2)>article:last-of-type{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #7272c2;
+
+		}
+
+		main>section:nth-of-type(2)>article:last-of-type>p{
+			font-size: 1.2em;
+			font-family: "Poppins", sans-serif;
+			font-style: italic;
+			color: #fff;
+			padding: 15% 4%;
+		}
+
+		main>section:nth-of-type(3){
+			justify-content: center;
+			display: flex;
+			align-content: center;
+			overflow: hidden;
+		} 
+
+		main>section:nth-of-type(3){
+			justify-content: center;
+			display: flex;
+			align-content: center;
+			overflow: hidden;
+		} 
+
+		main>section:nth-of-type(3)>article:last-of-type{
+
+
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+	background-image: url(../img/supersaiyan.webp);
+    background-repeat: no-repeat;
+    background-size: cover; /* La imagen se ajusta para cubrir completamente el contenedor */
+    background-position: center; /* La imagen se posiciona en el centro del contenedor */
+    padding: 10% 0;
+		}
+
+
+		main table{
+			width: 100%;
+			min-width: 300px;
+		}
+
+
+		table, table th, table td{
+			padding: 2%;
+		}
+
+		table tr:nth-of-type(odd){
+			background-color: #fff;
+		}
+		table tr:nth-of-type(even){
+			background-color: #7272c2;
+		}
+
+		main table tr:first-of-type{
+			background-color: #00f2;
+		}
+
+/* ---- Margenes de los dos primeros section ---- */
+
+		@media screen and (max-width: 1200px){
+			main>section:nth-of-type(2){
+				flex-direction: column;
+			}
+
+			main>section:nth-of-type(3){
+				flex-direction: column-reverse;
+			}
+			main>section:nth-of-type(2)>article{
+				width: 100%;
+			}
+
+			main>section:nth-of-type(2)>article:last-of-type>p{
+				padding: 6% 4%;
+			}
+			main>section:nth-of-type(3)>article{
+				width: 100%;
+			}
+			section p {
+				font-size: 0.8rem;
+				margin: 4% 2%;
+			}
+			main>section:nth-of-type(2)>article:last-of-type>p{
+			font-size: 0.9rem;
+		}
+			main>section:nth-of-type(2)>article:first-of-type, main>section:nth-of-type(3)>article:last-of-type{
+				height: 300px;
+			}
+
+		}
+
+		@media screen and (max-width: 700px){
+
+			section p{
+				font-size: 0.9rem;
+				margin: 4% 2%;
+			
+		}
+		main>section:nth-of-type(2)>article:last-of-type>p{
+			font-size: 0.9rem;
+		}
+			table>tr>td{
+				font-size: 0.6rem;
+				font-family: "Poppins", sans-serif;
+			font-style: italic;
+			}
+
+		}
+
+		@media screen and (max-width: 1054px){
+
+			
+		}
+
+		
+
+	/*--------------------Pie de la Web--------------------*/
+
+	footer{
+		padding: 1% 2%;
+		background-color: #c4c9d4;
+		text-align: center;
+		font-size: 1em;
+		font-family: "Poppins", sans-serif;
+		font-style: italic;
+	}
+
